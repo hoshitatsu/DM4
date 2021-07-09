@@ -1,9 +1,15 @@
-#include<stdlib.h>
 #include<stdio.h>
+#include<stdlib.h>
 #include<time.h>
+//ask name part
 int main(){
-  srand(time(NULL));
+ srand(time(NULL));
   int a, i,dice[2], total;
+  char str[10];
+printf("who are you?" );
+scanf("%s" ,str);
+printf("Hello, %s\n" ,str);
+//dice part
  
 printf("please roll your dice...\n");
 for(a=0; a<2; a++){
@@ -14,3 +20,4 @@ for(a=0; a<2; a++){
  printf("total: %d\n",total);
 return 0;
 }
+
