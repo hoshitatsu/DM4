@@ -12,5 +12,7 @@ for(a=0; a<2; a++){
     total+=dice[a];
 }
  printf("total: %d\n",total);
+  if(total>7)printf("%s won!",name);
+  else printf("%s lose",name);
 return 0;
 }
